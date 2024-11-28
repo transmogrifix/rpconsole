@@ -307,7 +307,7 @@ export class TopicMessageView extends Component<TopicMessageViewProps> {
                         </Label>
 
                         <Label text="Max Results">
-                            <SingleSelect<number> value={searchParams.maxResults} onChange={(c) => (searchParams.maxResults = c)} options={[1, 3, 5, 10, 20, 50, 100, 200, 500].map((i) => ({ value: i }))} />
+                            <SingleSelect<number> value={searchParams.maxResults} onChange={(c) => (searchParams.maxResults = c)} options={[1, 3, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000].map((i) => ({ value: i }))} />
                         </Label>
 
                         {uiState.topicSettings.dynamicFilters.map(filter => ({
