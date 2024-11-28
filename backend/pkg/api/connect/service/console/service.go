@@ -121,6 +121,7 @@ func (api *Service) ListMessages(
 		KeyDeserializer:       fromProtoEncoding(req.Msg.GetKeyDeserializer()),
 		ValueDeserializer:     fromProtoEncoding(req.Msg.GetValueDeserializer()),
 	}
+	
 
 	api.authHooks.PrintListMessagesAuditLog(ctx, req, &listReq)
 
